@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a63f42">
+  <title>Wedding Invitation — Mohammed &amp; Manar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="petal petal-one" aria-hidden="true"></div>
+  <header class="hero">
+    <p class="eyebrow">بكل الحب ندعوكم لمشاركتنا فرحتنا</p>
+    <div class="envelope-wrap" aria-label="دعوة زفاف باللون الأحمر">
+      <div class="envelope">
+        <div class="envelope-flap"></div>
+        <div class="seal">M <span>&amp;</span> M</div>
+        <div class="pearl-line">◦ ◦ ◦ ◦ ◦ ◦</div>
+      </div>
+      <div class="invitation-card">
+        <div class="ornament">❦ ❧ ❦</div>
+        <p>Wedding Invitation</p>
+        <h1>Mohammed <span>&amp;</span> Manar</h1>
+        <p class="arabic-invite">دعوة لحضور حفل زفافنا</p>
+      </div>
+    </div>
+    <button class="music-button" id="musicButton" type="button" aria-pressed="false">
+      <span class="music-icon">♫</span>
+      <span id="musicLabel">اضغطي لتشغيل الأغنية</span>
+    </button>
+    <audio id="weddingAudio" preload="metadata" loop>
+      <source src="assets/wedding-song.m4a" type="audio/mp4">
+      متصفحك لا يدعم تشغيل الصوت.
+    </audio>
+    <p class="music-note">يمكن تشغيل الأغنية أو إيقافها من هنا</p>
+  </header>
+
+  <main>
+    <section class="details section">
+      <div class="section-flourish">✦</div>
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h2 class="date-title">November 2026</h2>
+      <div class="date-card">
+        <span>FRIDAY</span>
+        <strong>13</strong>
+        <span>NOVEMBER</span>
+      </div>
+      <div class="event-time">6:00 PM</div>
+      <p class="venue-en">Nile Corniche, Aghakhan<br>Opposite Happy Land Casino<br>Shubra, Egypt</p>
+      <div class="divider-flower">❀</div>
+      <p class="venue-ar">مستنينكم يوم الجمعة الساعة ٦<br>في قاعة القصر على كورنيش النيل أغاخان<br>أمام كازينو هابي لاند<br>شبرا مصر</p>
+      <div class="photo-strip">
+        <figure><img src="assets/couple-1.jpg" alt="صورة للعروسين" loading="lazy"></figure>
+        <figure><img src="assets/couple-2.jpg" alt="صورة للعروسين" loading="lazy"></figure>
+        <figure><img src="assets/couple-3.jpg" alt="صورة للعروسين" loading="lazy"></figure>
+      </div>
+      <a class="map-link" href="https://www.google.com/maps/search/?api=1&query=Nile+Corniche+Aghakhan+Shubra+Egypt" target="_blank" rel="noopener">افتحي موقع القاعة على الخريطة ↗</a>
+    </section>
+
+    <section class="countdown-section section">
+      <p class="eyebrow">THE BIG DAY IS COMING</p>
+      <h2>باقي على فرحتنا</h2>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">--</strong><span>يوم</span></div>
+        <div><strong id="hours">--</strong><span>ساعة</span></div>
+        <div><strong id="minutes">--</strong><span>دقيقة</span></div>
+        <div><strong id="seconds">--</strong><span>ثانية</span></div>
+      </div>
+      <div class="silk-wave" aria-hidden="true"></div>
+    </section>
+
+    <section class="guestbook section">
+      <p class="eyebrow">WITH LOVE</p>
+      <h2>سيبوا لنا كلمة حلوة ❤️</h2>
+      <p class="guestbook-intro">فرحتنا تكمل بوجودكم وكلامكم الجميل. اكتبوا تهنئتكم للعروسين.</p>
+      <form id="messageForm" class="message-form">
+        <label for="guestName">اسمك</label>
+        <input id="guestName" name="guestName" maxlength="60" required placeholder="اكتبي اسمك">
+        <label for="guestMessage">رسالة التهنئة</label>
+        <textarea id="guestMessage" name="guestMessage" maxlength="500" rows="4" required placeholder="اكتبي رسالة جميلة للعروسين..."></textarea>
+        <button type="submit" id="sendMessage">إرسال التهنئة</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+      <div class="guestbook-heading">
+        <h3>تهاني الأحباب</h3>
+        <span id="messageCount">0 رسالة</span>
+      </div>
+      <div id="messagesList" class="messages-list">
+        <p class="empty-state">لسه مستنيين أول تهنئة ❤️</p>
+      </div>
+      <p class="setup-warning" id="setupWarning">دفتر التهاني يحتاج إعداد قاعدة البيانات قبل نشر الموقع ليستقبل الرسائل ويحفظها للجميع.</p>
+    </section>
+  </main>
+
+  <footer>Made with love · Mohammed &amp; Manar · 2026</footer>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
