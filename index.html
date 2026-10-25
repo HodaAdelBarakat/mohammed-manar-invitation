@@ -16,14 +16,12 @@
 
   <header class="hero">
     <p class="eyebrow">بكل الحب ندعوكم لمشاركتنا فرحتنا</p>
-
     <div class="envelope-wrap" aria-label="دعوة زفاف باللون الأحمر">
       <div class="envelope">
         <div class="envelope-flap"></div>
         <div class="seal">M <span>&amp;</span> M</div>
         <div class="pearl-line">◦ ◦ ◦ ◦ ◦ ◦</div>
       </div>
-
       <div class="invitation-card">
         <div class="ornament">❦ ❧ ❦</div>
         <p>Wedding Invitation</p>
@@ -36,12 +34,10 @@
       <span class="music-icon">♫</span>
       <span id="musicLabel">اضغطي لتشغيل الأغنية</span>
     </button>
-
     <audio id="weddingAudio" preload="metadata" loop>
       <source src="assets/wedding-song.m4a" type="audio/mp4">
       متصفحك لا يدعم تشغيل الصوت.
     </audio>
-
     <p class="music-note">يمكن تشغيل الأغنية أو إيقافها من هنا</p>
   </header>
 
@@ -58,15 +54,12 @@
       </div>
 
       <div class="event-time">6:00 PM</div>
-
       <p class="venue-en">
-        Nile Corniche, Aghakhan<br>
-        Opposite Happy Land Casino<br>
-        Shubra, Egypt
+        13 Al Kornish, Asad, El Sahel<br>
+        Al-Qalyubia Governorate 4350223
       </p>
 
       <div class="divider-flower">❀</div>
-
       <p class="venue-ar">
         مستنينكم يوم الجمعة الساعة ٦<br>
         في قاعة القصر على كورنيش النيل أغاخان<br>
@@ -75,21 +68,14 @@
       </p>
 
       <div class="photo-strip">
-        <figure>
-          <img src="assets/couple-1.jpg" alt="صورة للعروسين" loading="lazy">
-        </figure>
-        <figure>
-          <img src="assets/couple-2.jpg" alt="صورة للعروسين" loading="lazy">
-        </figure>
-        <figure>
-          <img src="assets/couple-3.jpg" alt="صورة للعروسين" loading="lazy">
-        </figure>
+        <figure><img src="assets/couple-1.jpg" alt="صورة للعروسين" loading="lazy"></figure>
+        <figure><img src="assets/couple-2.jpg" alt="صورة للعروسين" loading="lazy"></figure>
+        <figure><img src="assets/couple-3.jpg" alt="صورة للعروسين" loading="lazy"></figure>
       </div>
 
-      <!-- تم تعديل رابط الخريطة ليفتح رابط القاعة الذي أرسلتيه -->
       <a
         class="map-link"
-        href="https://maps.app.goo.gl/q2kLzyJBPTzp38D66?g_st=aw"
+        href="https://www.google.com/maps/search/?api=1&query=13%20Al%20Kornish%2C%20Asad%2C%20El%20Sahel%2C%20Al-Qalyubia%20Governorate%204350223"
         target="_blank"
         rel="noopener"
       >افتحي موقع القاعة على الخريطة ↗</a>
@@ -98,43 +84,26 @@
     <section class="countdown-section section">
       <p class="eyebrow">THE BIG DAY IS COMING</p>
       <h2>باقي على فرحتنا</h2>
-
       <div class="countdown" aria-live="polite">
         <div><strong id="days">--</strong><span>يوم</span></div>
         <div><strong id="hours">--</strong><span>ساعة</span></div>
         <div><strong id="minutes">--</strong><span>دقيقة</span></div>
         <div><strong id="seconds">--</strong><span>ثانية</span></div>
       </div>
-
       <div class="silk-wave" aria-hidden="true"></div>
     </section>
 
     <section class="guestbook section">
       <p class="eyebrow">WITH LOVE</p>
       <h2>سيبوا لنا كلمة حلوة ❤️</h2>
-      <p class="guestbook-intro">
-        فرحتنا تكمل بوجودكم وكلامكم الجميل. اكتبوا تهنئتكم للعروسين.
-      </p>
+      <p class="guestbook-intro">فرحتنا تكمل بوجودكم وكلامكم الجميل. اكتبوا تهنئتكم للعروسين.</p>
 
       <form id="messageForm" class="message-form">
         <label for="guestName">اسمك</label>
-        <input
-          id="guestName"
-          name="guestName"
-          maxlength="60"
-          required
-          placeholder="اكتبي اسمك"
-        >
+        <input id="guestName" name="guestName" maxlength="60" required placeholder="اكتبي اسمك">
 
         <label for="guestMessage">رسالة التهنئة</label>
-        <textarea
-          id="guestMessage"
-          name="guestMessage"
-          maxlength="500"
-          rows="4"
-          required
-          placeholder="اكتبي رسالة جميلة للعروسين..."
-        ></textarea>
+        <textarea id="guestMessage" name="guestMessage" maxlength="500" rows="4" required placeholder="اكتبي رسالة جميلة للعروسين..."></textarea>
 
         <button type="submit" id="sendMessage">إرسال التهنئة</button>
         <p class="form-status" id="formStatus" role="status"></p>
@@ -156,10 +125,7 @@
   </main>
 
   <footer>Made with love · Mohammed &amp; Manar · 2026</footer>
-
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
-      
